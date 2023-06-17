@@ -36,3 +36,5 @@ def test_accuracy():
 
     # f1-score should be over 0.7
     assert f1 > 0.7
+
+    
