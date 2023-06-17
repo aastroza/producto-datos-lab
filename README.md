@@ -26,7 +26,7 @@ Vamos a usar Conda para construir un entorno virtual nuevo.
 Asumiremos que tenemos instalado conda. El primer paso es crear un nuevo enviroment para desarrollar. Para crear uno usando Python 3.8 debemos ejecutar el siguiente comando:
  
 ```bash
-conda create --name producto-datos-lab python=3.8
+conda create --name producto-datos-lab python=3.9.12
 ```
  
 Luego debemos activarlo usando el comando:
