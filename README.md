@@ -98,7 +98,7 @@ Ahora necesitamos clonarlo a nuestra máquina local. Se puede hacer mediante [Gi
 git clone https://github.com/your-username/producto-datos-lab.git
 ```
 
-Ahora hay que habilitar las Asctions en el fork. Se puede hacer haciendo click en el botón Actions:
+Ahora hay que habilitar las Actions en el fork. Se puede hacer haciendo click en el botón Actions:
 
 ![action-button](assets/action-button.PNG)
 
