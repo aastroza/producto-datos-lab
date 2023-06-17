@@ -6,7 +6,7 @@ Para comenzar deben haber bajado todos los archivos a una carpeta y en el termin
 
 ```
 .
-└── pd-mds-2022-lab (este directorio)
+└── producto-datos-lab (este directorio)
     ├── model (acá irán nuestros modelos)
     ├── 00_nyc-taxi-model.ipynb
     ├── 01_server.ipynb
@@ -26,20 +26,20 @@ Vamos a usar Conda para construir un entorno virtual nuevo.
 Asumiremos que tenemos instalado conda. El primer paso es crear un nuevo enviroment para desarrollar. Para crear uno usando Python 3.8 debemos ejecutar el siguiente comando:
  
 ```bash
-conda create --name pd-mds-2022-lab python=3.8
+conda create --name producto-datos-lab python=3.8
 ```
  
 Luego debemos activarlo usando el comando:
  
 ```bash
-conda activate pd-mds-2022-lab
+conda activate producto-datos-lab
 ```
  
 Todo el trabajo que realicemos con este código será en este entorno. Así que al trabajarcon estos archivos siempre tiene que estar activo el ambiente pd-mds-2022-lab.
  
 ### 2. Instalando las dependencias usando PIP 
  
-Antes de seguir, verifica que en el terminal de Anaconda estés dentro del directorio `pd-mds-2022-lab`, el cual incluye el archivo `requirements.txt`. Este archivo enlista todas las dependencias necesarias y podemos usarlo para instalarlas todas:
+Antes de seguir, verifica que en el terminal de Anaconda estés dentro del directorio `producto-datos-lab`, el cual incluye el archivo `requirements.txt`. Este archivo enlista todas las dependencias necesarias y podemos usarlo para instalarlas todas:
  
 ```bash
 pip install -r requirements.txt
@@ -50,7 +50,7 @@ Este comando puede demorar un rato dependiendo de la velocidad del computador y 
 Luego debemos enlazar el kernel de jupyter lab a nuestro nuevo enviroment:
 
 ```bash
-python -m ipykernel install --user --name pd-mds-2022-lab
+python -m ipykernel install --user --name producto-datos-lab
 ```
 
  
@@ -95,7 +95,7 @@ Una vez que el proceso de fork haya terminado, deberíamos tener una copia del r
 Ahora necesitamos clonarlo a nuestra máquina local. Se puede hacer mediante [GitHub Desktop](https://desktop.github.com/) o usando este comando (ojo que hay que reemplazar el username por el propio):
 
 ```bash
-git clone https://github.com/your-username/pd-mds-2022-lab.git
+git clone https://github.com/your-username/producto-datos-lab.git
 ```
 
 Ahora hay que habilitar las Asctions en el fork. Se puede hacer haciendo click en el botón Actions:
@@ -110,7 +110,7 @@ Y luego haciendo click en el botón verde:
 
 Ahora revisemos lo que hay en el repositorio.
 
-Notemos que hay un directorio oculto en la raíz del repositorio que se llama `.github`. Dentro hay otro directorio llamado `workflows`, aquí se ponen todos los archivos necesarios para configurar las Actions. Estos archivos deben estar en formato `YAML`. En este caso debemos encontrarnos con uno llamado `pd-mds-2022-lab.yml` que será responsable de configurar la acción que deseamos corra el test unitario. El contenido de este archivo es el siguiente:
+Notemos que hay un directorio oculto en la raíz del repositorio que se llama `.github`. Dentro hay otro directorio llamado `workflows`, aquí se ponen todos los archivos necesarios para configurar las Actions. Estos archivos deben estar en formato `YAML`. En este caso debemos encontrarnos con uno llamado `producto-datos-lab.yml` que será responsable de configurar la acción que deseamos corra el test unitario. El contenido de este archivo es el siguiente:
 
 ```yml
 # Run unit tests for your Python application
