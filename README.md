@@ -64,7 +64,7 @@ jupyter lab
 
 ### 4. Generando modelo de ML
 
-El notebook que genera el modelo se puede ejecutar en su totalidad desde [Google Colab](https://drive.google.com/file/d/19R8yRdgGOIuGCBmHZQibADRbz_JRV6tt/view?usp=sharing).
+El notebook que genera el modelo se puede ejecutar en su totalidad desde [Google Colab](https://colab.research.google.com/drive/1CajYNrge3sAdV7Tc6YDvbB6fVqIP2qsJ?usp=sharing).
 
 
 ## Agregando pipelines de CI/CD usando GitHub Actions
