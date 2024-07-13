@@ -26,7 +26,7 @@ Vamos a usar Conda para construir un entorno virtual nuevo.
 Asumiremos que tenemos instalado conda. El primer paso es crear un nuevo enviroment para desarrollar. Para crear uno usando Python 3.8 debemos ejecutar el siguiente comando:
  
 ```bash
-conda create --name producto-datos-lab python=3.9.12
+conda create --name producto-datos-lab python=3.8
 ```
  
 Luego debemos activarlo usando el comando:
@@ -35,7 +35,7 @@ Luego debemos activarlo usando el comando:
 conda activate producto-datos-lab
 ```
  
-Todo el trabajo que realicemos con este código será en este entorno. Así que al trabajarcon estos archivos siempre tiene que estar activo el ambiente pd-mds-2022-lab.
+Todo el trabajo que realicemos con este código será en este entorno. Así que al trabajarcon estos archivos siempre tiene que estar activo el `producto-datos-lab`.
  
 ### 2. Instalando las dependencias usando PIP 
  
