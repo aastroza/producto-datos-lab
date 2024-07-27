@@ -10,3 +10,4 @@ numpy
 ipykernel
 pytest
 pyarrow
+scipy
