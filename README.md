@@ -26,7 +26,7 @@ Vamos a usar Conda para construir un entorno virtual nuevo.
 Asumiremos que tenemos instalado conda. El primer paso es crear un nuevo enviroment para desarrollar. Para crear uno usando Python 3.8 debemos ejecutar el siguiente comando:
  
 ```bash
-conda create --name producto-datos-lab python=3.8
+conda create --name producto-datos-lab python=3.9
 ```
  
 Luego debemos activarlo usando el comando:
@@ -65,6 +65,76 @@ jupyter lab
 ### 4. Generando modelo de ML
 
 El notebook que genera el modelo se puede ejecutar en su totalidad desde [Google Colab](https://colab.research.google.com/drive/1CajYNrge3sAdV7Tc6YDvbB6fVqIP2qsJ?usp=sharing).
+
+
+## Pasos alternativos usando uv
+
+### Prerequisito: Tener [uv](https://docs.astral.sh/uv/) instalado en tu computador.
+
+`uv` es una herramienta moderna y rápida para gestionar entornos virtuales y dependencias de Python. Como alternativa a conda, puedes usar `uv` que ofrece un rendimiento significativamente mejor.
+
+### 1. Instalando uv
+
+Si no tienes `uv` instalado, puedes instalarlo con:
+
+**En Windows (PowerShell):**
+```bash
+powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+**En Windows (usando pip):**
+```bash
+pip install uv
+```
+
+**En macOS/Linux:**
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+### 2. Creando el entorno virtual con uv
+
+Navega al directorio `producto-datos-lab` y crea un entorno virtual:
+
+```bash
+uv venv
+```
+
+### 3. Activando el entorno virtual
+
+**En Windows:**
+```bash
+producto-datos-lab\Scripts\activate
+```
+
+**En macOS/Linux:**
+```bash
+source producto-datos-lab/bin/activate
+```
+
+### 4. Instalando las dependencias con uv
+
+Con el entorno activado, instala todas las dependencias directamente desde `requirements.txt`:
+
+```bash
+uv pip install -r requirements.txt
+```
+
+Este comando es significativamente más rápido que pip tradicional y maneja mejor la resolución de dependencias.
+
+### 5. Enlazando el kernel de Jupyter
+
+Instala el kernel para Jupyter:
+
+```bash
+python -m ipykernel install --user --name producto-datos-lab
+```
+
+### 6. Iniciando Jupyter Lab
+
+```bash
+jupyter lab
+```
 
 
 ## Agregando pipelines de CI/CD usando GitHub Actions
