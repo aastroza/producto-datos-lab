@@ -1,0 +1,8 @@
+*.ipynb
+notebooks/
+model/
+assets/
+docs/
+app/
+.vscode/
+.venv/

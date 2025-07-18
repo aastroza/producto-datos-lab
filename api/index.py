@@ -1,11 +1,6 @@
 import joblib
 import numpy as np
-import io
-import uvicorn
-import nest_asyncio
-from enum import Enum
-from fastapi import FastAPI, HTTPException
-from fastapi.responses import StreamingResponse
+from fastapi import FastAPI
 from pydantic import BaseModel
 
 rfc = joblib.load("./model/random_forest.joblib")
