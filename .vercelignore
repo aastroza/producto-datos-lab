@@ -7,3 +7,9 @@ app/
 .vscode/
 .venv/
 requirements.txt
+
+!api/
+!api/index.py
+!api/model/
+!api/model/random_forest.joblib
+!api/requirements.txt
