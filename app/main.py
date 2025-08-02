@@ -65,4 +65,5 @@ def prediction(item: Item, confidence: float):
     # Retornar el resultado de la predicción
     return {'predicted_class': pred}
 
-# Este es un comentario para testear el flujo de GH.
+# Este es un comentario para testear el flujo de GH.}
+# Este es otro comentario para testear el flujo de GH.
