@@ -67,3 +67,4 @@ def prediction(item: Item, confidence: float):
 
 # Este es un comentario para testear el flujo de GH.}
 # Este es otro comentario para testear el flujo de GH.
+# Y este es un tercer comentario para testear el flujo de GH.
